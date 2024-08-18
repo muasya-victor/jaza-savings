@@ -19,10 +19,11 @@ env/
 
 # Static files
 /static
+staticfiles/
 /media
 
 # Migration files
-# migrations/
+ migrations/
 
 # IDEs and editors
 .idea/
