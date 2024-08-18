@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import dj_database_url
+from decouple import config
 import os
 
 
@@ -95,7 +96,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # }
 DATABASES = {
     'default': dj_database_url.config(
-        default='mysql://r4xqlth8e1bki1dt:fdyinkbizil4s215@q57yawiwmnaw13d2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/aaexzvcjc6kjb99c'
+        default=config('JAWSDB_URL', default='sqlite:///db.sqlite3')
     )
 }
 

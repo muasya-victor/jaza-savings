@@ -39,7 +39,7 @@ Jaza Savings App is a Django-based application designed to help users manage the
 
     ```env
     DEBUG=True
-    DATABASE_URL=mysql://username:password@localhost:3306/dbname
+    JAWSDB_URL=mysql://username:password@localhost:3306/dbname
     ```
 
     Replace `username`, `password`, `localhost`, and `dbname` with your local MySQL database credentials.
@@ -134,7 +134,7 @@ Jaza Savings App is a Django-based application designed to help users manage the
 ## Additional Notes
 
 - **Database Configuration:**
-  - Ensure that the `DATABASE_URL` in your `.env` file and Heroku settings are properly configured.
+  - Ensure that the `JAWSDB_URL` in your `.env` file and Heroku settings are properly configured.
 
 - **Environment Variables:**
   - You may need to set additional environment variables depending on your project's requirements.
