@@ -144,3 +144,10 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# PayPal Configuration
+PAYPAL_MODE = config('PAYPAL_MODE', default='sandbox')
+PAYPAL_CLIENT_ID = config('PAYPAL_CLIENT_ID')
+PAYPAL_CLIENT_SECRET = config('PAYPAL_CLIENT_SECRET')
+APP_API_URL = config('APP_API_URL')
+APPEND_SLASH = False
